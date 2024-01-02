@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Dictionary from "../assets/portfolio/Dictionary.png";
 import expensetracker from "../assets/portfolio/expensetracker.png";
 import pizzaorder from "../assets/portfolio/pizzaorder.png";
@@ -38,6 +39,8 @@ const Portfolio = () => {
     },
   ];
 
+  const linkRef = useRef(null);
+
   return (
     <div
       name="Portfolio"
@@ -54,12 +57,14 @@ const Portfolio = () => {
           {portfolios.map((portfolio) => (
             <div
               key={portfolio.id}
-              className="shadow-md shadow-gray-600 rounded-lg mb-8"
+              className="shadow-md shadow-gray-600 rounded-lg mb-8 cursor-pointer"
+              onClick={() => (window.location.href = portfolio.live)}
             >
               <img
                 src={portfolio.src}
                 alt=""
                 className="rounded-md w-full h-auto duration-200 hover:scale-105"
+                ref={linkRef}
               />
               <div className="flex items-center justify-center mt-4">
                 <button className="w-full px-6 py-3 m-2 duration-200 hover:scale-105">

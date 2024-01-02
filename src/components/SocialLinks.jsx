@@ -38,7 +38,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://github.com/Fisayo55",
+      href: "https://www.linkedin.com/in/adeyekun-oluwafisayo-a93400228/",
     },
     {
       id: 5,

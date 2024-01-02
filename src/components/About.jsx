@@ -91,8 +91,8 @@ const About = () => {
             I'm always open to new opportunities, collaborations, and
             interesting projects. Whether you have a specific project in mind or
             just want to chat about the latest in web development, feel free to{" "}
-            <span className="text-blue-500">contact me</span> – I'd love to hear
-            from you! Let's build something amazing together! 🚀
+            I'd love to hear from you! Let's build something amazing together!
+            🚀
           </p>
         </div>
       </div>
