@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <div className="bg-gradient-to-b from-gray-800 to-black text-white">
+    <div
+      className="bg-gradient-to-b from-gray-800 to-black text-white"
+      name="About"
+    >
       <div className="container mx-auto p-4 md:p-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-white mb-4">About Me</h1>
@@ -88,8 +91,8 @@ const About = () => {
             I'm always open to new opportunities, collaborations, and
             interesting projects. Whether you have a specific project in mind or
             just want to chat about the latest in web development, feel free to{" "}
-            <span className="text-blue-500">contact me</span> – I'd love to hear
-            from you! Let's build something amazing together! 🚀
+            I'd love to hear from you! Let's build something amazing together!
+            🚀
           </p>
         </div>
       </div>

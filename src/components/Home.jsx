@@ -1,4 +1,5 @@
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -25,12 +26,17 @@ const Home = () => {
             exceptional digital experiences to life!
           </p>
           <div>
-            <button className=" group text-white w-fit flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-4 my-2 cursor-pointer">
+            <Link
+              to="Portfolio"
+              smooth
+              duration={500}
+              className=" group text-white w-fit flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-4 my-2 cursor-pointer"
+            >
               Portfolio{" "}
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
