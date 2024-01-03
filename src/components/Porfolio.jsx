@@ -58,16 +58,16 @@ const Portfolio = () => {
             <div
               key={portfolio.id}
               className="shadow-md shadow-gray-600 rounded-lg mb-8 cursor-pointer"
-              onClick={() => (window.location.href = portfolio.live)}
             >
               <img
                 src={portfolio.src}
                 alt=""
                 className="rounded-md w-full h-auto duration-200 hover:scale-105"
                 ref={linkRef}
+                onClick={() => (window.location.href = portfolio.live)}
               />
               <div className="flex items-center justify-center mt-4">
-                <button className="w-full px-6 py-3 m-2 duration-200 hover:scale-105">
+                <button className="w-full px-6 bg-gradient-to-t from-cyan-500 to to-blue-500 rounded-md py-3 m-2 duration-200 hover:scale-105 text-center">
                   <a
                     href={portfolio.live}
                     className="flex justify-between items-center w-full text-white"
@@ -78,7 +78,7 @@ const Portfolio = () => {
                     Demo
                   </a>
                 </button>
-                <button className="w-full px-6 py-3 m-2 duration-200 hover:scale-105">
+                <button className="w-full px-6 py-3 bg-gradient-to-t from-cyan-500 to-blue-500 rounded-md  m-2 duration-200 hover:scale-105 text-center">
                   <a
                     href={portfolio.code}
                     className="flex justify-between items-center w-full text-white"
